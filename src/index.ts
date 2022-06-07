@@ -6,7 +6,11 @@ type SvgToVueComponentParams = {
   target: 'vue' | 'vue3';
 };
 
-export const svgToVueComponent = ({ svg, name, target }: SvgToVueComponentParams) => {
+export const svgToVueComponent = ({
+  svg,
+  name,
+  target,
+}: SvgToVueComponentParams) => {
   return formatCode(svg, name, { target });
 };
 

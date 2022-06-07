@@ -1,8 +1,11 @@
 import { format } from 'prettier';
 
-const formatCode = (svg: string, name: string, options: { target: 'vue' | 'vue3' }) => {
+const formatCode = (
+  svg: string,
+  name: string,
+  options: { target: 'vue' | 'vue3' },
+) => {
   const prettierOptions = {
-    printWidth: 120,
     semi: true,
     singleQuote: true,
   };
